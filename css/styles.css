@@ -26,6 +26,10 @@ hr.light {
     border-color: #fff;
 }
 
+hr.dark {
+    border-color: #222;
+}
+
 a {
     color: #E43F42;
     -webkit-transition: all .35s;
@@ -346,6 +350,7 @@ textarea {
 
 .margin-top-0 {
     margin-top: 0;
+    color: #E43F42;
 }
 
 .feature {
