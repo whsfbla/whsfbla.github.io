@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
 
 html,
 body {
@@ -49,6 +50,10 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h4 {
+    color: white;
+}
+
 .sponsorspage_container {
     margin: 0 auto;
     padding: 100px 5vw 0;
@@ -68,6 +73,34 @@ h1,h2,h3,h4,h5,h6 {
     background-repeat: no-repeat;
     padding-right: 10%;
     padding-left: 10%;
+}
+
+.t-timeline {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.bg-sm {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image: url("https://www.hackduke.org/506993c65ca9f0e669206437d1f0883d.png");
+    background-repeat: no-repeat;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #c9c9c9;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background: radial-gradient(ellipse at top, #eee 0%, #fff 100%);
+    overflow: hidden;
 }
 
 .btn-space {
@@ -589,4 +622,296 @@ img::-moz-selection {
   50%{background-position:100% 100%}
   100%{background-position:0% 0%}
 }
+
+
+
+
+
+
+/* reset */
+
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset,
+img {
+  border: 0;
+  /* max-width: 100%; */
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+caption,
+th {
+  text-align: left
+}
+
+
+q:before,
+q:after {
+  content: ''
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal
+}
+
+sup {
+  vertical-align: text-top
+}
+
+sub {
+  vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+input,
+textarea,
+select {
+  *font-size: 100%
+}
+
+legend {
+  color: #000
+}
+
+#yui3-css-stamp.cssreset {
+  display: none
+}
+
+:focus {
+  outline: 0
+}
+
+.phoneFrame {
+  font-family: 'RobotoDraft', Arial;
+  color: #fff;
+  background: white no-repeat;
+  width: 382px;
+  height: 790px;
+  position: absolute;
+  margin: -395px 0px 0px -191px;
+  top: 50%;
+  left: 50%;
+}
+
+.screenEstate {
+  width: 334px;
+  height: 594px;
+  position: absolute;
+  top: 98px;
+  left: 50%;
+  margin-left: -167px;
+  z-index: 1;
+  overflow: hidden;
+  background: #fff;
+}
+
+.topBar {
+  width: 100%;
+  height: 47px;
+  background: #2962FF;
+  fill: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.topBar div {
+  margin: 10px 0 0 10px;
+  overflow:hidden;
+}
+
+.topBar div svg {
+  float: left;
+}
+
+.topBar div span {
+  font-size: 18px;
+  color: #fff;
+  float: left;
+  margin: 3px 0 0 10px;
+}
+
+.tabs {
+  background: #2962FF;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.tabs a {
+  width: 111px;
+  height: 20px;
+  float: left;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+}
+
+.tabs a.active {
+  border-bottom: rgba(255, 255, 255, 0.5) solid 5px;
+}
+
+.tabContent {
+  color: #666;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 502px;
+  top: -1000px;
+  opacity: 0;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  -webkit-transition: top .4s ease, opacity .5s ease, -webkit-filter .5s ease;
+  -moz-transition: top .4s ease, opacity .5s ease, -moz-filter .5s ease;
+  transition: top .4s ease, opacity .5s ease, filter .5s ease;
+}
+
+.tabContent.activeTab {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  filter: blur(0px);
+  z-index: 2;
+  top: 92px;
+  opacity: 1;
+}
+
+.tabContent ul {
+  padding: 20px;
+  margin-right: -20px;
+}
+
+.tabContent ul li {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: #eee solid 1px;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.tabContent ul li:last-child {
+  border-bottom: none;
+}
+
+.activeTab ul li {
+  padding-bottom: 13px !important;
+  margin-bottom: 13px !important;
+}
+
+.contactIcon {
+  width: 78px;
+  height: 78px;
+  text-align: center;
+  border-radius: 50px;
+  overflow: hidden;
+  float: left;
+  display: table;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.contactIcon img {
+  width: 79px;
+  vertical-align: middle;
+}
+
+.contactDetails {
+  float: left;
+  margin-top: 7px;
+  font-size: 18px;
+  clear: right;
+  width: 64%;
+}
+
+.otherDetails {
+  float: left;
+  color: #999;
+  clear: right;
+  width: 64%;
+}
+
+.phoneNo {
+  margin-top: 7px;
+  color: #666;
+}
+
+.tabContent h1 {
+  display: block;
+  text-align: center;
+  margin-top: 120px;
+  font-size: 20px;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.activeTab h1 {
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
