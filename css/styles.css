@@ -798,13 +798,14 @@ legend {
 .tabs a {
   width: 111px;
   height: 28px;
-  float: left;
   margin: 0;
   text-align: center;
   color: #fff;
   font-size: 16px;
   padding: 10px 0;
   border: none;
+  display: inline-block;
+  float: none;
 }
 
 .tabs a.active {
@@ -831,7 +832,7 @@ legend {
   -moz-filter: blur(0px);
   filter: blur(0px);
   z-index: 2;
-  top: 25px;
+  top: 30px;
   opacity: 1;
 }
 
@@ -890,6 +891,10 @@ legend {
   color: #999;
   clear: right;
   width: 64%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .phoneNo {
