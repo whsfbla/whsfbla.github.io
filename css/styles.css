@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 
 html,
 body {
@@ -44,7 +46,40 @@ a:focus {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sponsorspage_container {
+    padding: 100px 5vw 0;
+    margin: 0 auto;
+    width:100%;
+    background-size: 100% 100%;
+    background-color: #fff;
+    background-repeat:no-repeat;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.sponsorspage_bg {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: #eee;
+    background-repeat: no-repeat;
+}
+
+.btn-space {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px
 }
 
 p {
@@ -69,6 +104,11 @@ p {
 .bg-dark {
     color: #222;
     background-color: #eee;
+}
+
+.bg-light {
+    color: #222;
+    background-color: #fff;
 }
 
 
@@ -233,7 +273,6 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('http://i.imgur.com/eKAIXUQ.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -427,9 +466,8 @@ textarea {
 }
 
 .btn-default {
-    border-color: #222;
-    color: #222;
-    background-color: #fff;
+    color: #fff;
+    background-color: #E43F42;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -441,10 +479,8 @@ textarea {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
-    opacity: 0.7;
+    color: #fff;
+    background-color: #9c3d34;
 }
 
 .btn-default:active,
@@ -497,7 +533,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn {
     border: 0;
-    border-radius: 290px;
+    border-radius: 200px;
     font-family: 'Helvetica Neue',Arial,sans-serif;
 }
 
