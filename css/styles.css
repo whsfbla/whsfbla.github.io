@@ -66,12 +66,13 @@ h4 {
 }
 
 .phoneBg {
-    height: 800px;
-    background-color: #fff;
-    background-position: center;
-    width: 850px;
-    height: 750px;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -152,8 +153,15 @@ p {
 }
 
 .bg-light {
-    color: #222;
+    margin: 0 auto;
+    padding: 100px 5vw 0;
+    width:100%;
+    height: 1050px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
     background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 
@@ -744,18 +752,19 @@ legend {
 .phoneFrame {
   font-family: 'Source Sans Pro', Arial;
   color: #fff;
-  background: white no-repeat;
   background-position: center;
-  width: 850px;
+  width: 100%;
   height: 750px;
   position: absolute;
+  left: 1px;
+  right: 1px;
 }
 
 .screenEstate {
-  width: 850px;
+  width: 100%;
   height: 750px;
   position: absolute;
-  top: 98px;
+  top: 25px;
   z-index: 1;
   overflow: hidden;
   background: #fff;
@@ -822,7 +831,7 @@ legend {
   -moz-filter: blur(0px);
   filter: blur(0px);
   z-index: 2;
-  top: 92px;
+  top: 25px;
   opacity: 1;
 }
 
