@@ -35,6 +35,7 @@ hr.dark {
 
 a {
     color: #E43F42;
+    text-decoration: none;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -754,7 +755,7 @@ legend {
   color: #fff;
   background-position: center;
   width: 100%;
-  height: 750px;
+  height: 600px;
   position: absolute;
   left: 1px;
   right: 1px;
@@ -762,28 +763,12 @@ legend {
 
 .screenEstate {
   width: 100%;
-  height: 750px;
+  height: 600px;
   position: absolute;
   top: 25px;
   z-index: 1;
   overflow: hidden;
   background: #fff;
-}
-
-.topBar div {
-  margin: 10px 0 0 10px;
-  overflow:hidden;
-}
-
-.topBar div svg {
-  float: left;
-}
-
-.topBar div span {
-  font-size: 18px;
-  color: #fff;
-  float: center;
-  margin: 3px 0 0 10px;
 }
 
 .tabs {
@@ -793,12 +778,9 @@ legend {
   z-index: 3;
 }
 
-
-
 .tabs a {
   width: 111px;
-  height: 28px;
-  margin: 0;
+  height: 40px;
   text-align: center;
   color: #fff;
   font-size: 16px;
@@ -806,6 +788,7 @@ legend {
   border: none;
   display: inline-block;
   float: none;
+  text-decoration: none;
 }
 
 .tabs a.active {
@@ -832,12 +815,13 @@ legend {
   -moz-filter: blur(0px);
   filter: blur(0px);
   z-index: 2;
-  top: 30px;
+  top: 70px;
   opacity: 1;
 }
 
 .tabContent ul {
   padding: 20px;
+  width: 100%;
 
 }
 
@@ -861,60 +845,67 @@ legend {
   margin-bottom: 13px !important;
 }
 
-.contactIcon {
-  width: 78px;
-  height: 78px;
-  text-align: center;
-  border-radius: 50px;
-  overflow: hidden;
-  float: left;
-  display: table;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-
-.contactIcon img {
-  width: 79px;
-  vertical-align: middle;
-}
-
-.contactDetails {
-  float: left;
-  margin-top: 7px;
-  font-size: 18px;
-  clear: right;
-  width: 64%;
-}
-
-.otherDetails {
-  float: left;
-  color: #999;
-  clear: right;
-  width: 64%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.phoneNo {
-  margin-top: 7px;
-  color: #666;
-}
-
 .tabContent h1 {
   display: block;
   text-align: center;
   margin-top: 120px;
   font-size: 20px;
+  text-decoration: none;
+  padding: 5px; 0;
   -webkit-transition: all .8s ease;
   -moz-transition: all .8s ease;
   transition: all .8s ease;
 }
 
 .activeTab h1 {
-  margin-top: 80px;
+  margin-top: 20px;
 }
+
+.threeModify {
+  padding-top: 20px;
+}
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #222;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #222;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
 
 
 
