@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700,900);
 @import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
 html,
 body {
@@ -64,6 +64,18 @@ h4 {
     background-color: #fff;
     padding-top: 75px;
     padding-bottom: 75px;
+}
+.activities_container {
+    margin: 0 auto;
+    padding: 100px 5vw 0;
+    width:100%;
+    height: 600px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 }
 
 .phoneBg {
@@ -157,7 +169,7 @@ p {
     margin: 0 auto;
     padding: 100px 5vw 0;
     width:100%;
-    height: 1050px;
+    height: 850px;
     background-size: 100% 100%;
     background-repeat:no-repeat;
     background-color: #fff;
@@ -476,6 +488,22 @@ textarea {
     overflow:hidden;
 }
 
+.text-activities {
+  color: #ddd;
+}
+
+.one {
+  background: #e73827;
+  background-image: -webkit-radial-gradient(top, circle cover, #E43F42, #e73827 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #E43F42, #e73827 80%);
+  background-image: -o-radial-gradient(top, circle cover, #E43F42, #e73827 80%);
+  background-image: radial-gradient(top, circle cover, #E43F42, #e73827 80%);
+}
+
+.fa-users, .fa-trophy, .fa-handshake-o, .text-white {
+  color: #eee;
+}
+
 .gallery-box .gallery-box-caption {
     display: block;
     position: absolute;
@@ -755,7 +783,7 @@ legend {
   color: #fff;
   background-position: center;
   width: 100%;
-  height: 600px;
+  height: 450px;
   position: absolute;
   left: 1px;
   right: 1px;
@@ -763,7 +791,7 @@ legend {
 
 .screenEstate {
   width: 100%;
-  height: 600px;
+  height: 450px;
   position: absolute;
   top: 25px;
   z-index: 1;
@@ -910,11 +938,145 @@ td{
 
 
 
+@media (min-width: 450px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1 {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5.25em;
+    margin: 0 0 1em;
+  }
+}
+
+.btn-37 p {
+  color: #fff;
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+  .btn-37 p {
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: 90%;
+  }
+}
+@media (max-height: 500px) {
+  .btn-37 p {
+    left: 0;
+    position: relative;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+.btn-37 p a {
+  background: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid;
+  color: #222;
+  line-height: 1.4;
+  padding: .25em;
+  text-decoration: none;
+}
+.btn-37 p a:hover {
+  background: #222;
+  color: #E1332D;
+}
 
 
+.btn-37 {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+.btn-37 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-37:hover {
+  text-decoration: none;
+}
+.btn-37:hover {
+  background: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btn-37 rect {
+  fill: none;
+  stroke: #222;
+  stroke-width: 0;
+  stroke-dasharray: 422, 0;
+}
+.btn-37:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.modifyBtn {
+  margin-top: 535px;
+  background: #e02c26;
+  font-weight: 100;
+}
 
+.skewed-bg{
+  background: #E43F42;
+  padding: 100px 0;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  margin-top: -200px;
+}
+.skewed-bg .content {
+  -webkit-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+  text-align: center;
+}
+.skewed-bg .content .title {
+  padding-top: 100px;
+  font-weight: normal;
+}
+.skewed-bg .content .text {
+  width: 60%;
+  margin: 25px auto;
+  color: #ccfff2;
+}
+  
+  .content{
+    @include transform(skew(0deg, 10deg));
+    text-align: center;
+    
+  } 
+}
 
-
+* {
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 
 
 
