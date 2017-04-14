@@ -27,6 +27,7 @@ hr {
 
 hr.light {
     border-color: #fff;
+    opacity: 0.3;
 }
 
 hr.dark {
@@ -47,13 +48,23 @@ a:focus {
     outline: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.sponsors-img img:hover {
+  opacity: 0.5;
+}
+
+h1,h2,h3,h5,h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
 h4 {
-    color: white;
+    font-family: 'Lato', sans-serif;
+    color: #eee;
 }
+
+h4:hover {
+    color: #aaa;
+}
+
 
 .sponsorspage_container {
     margin: 0 auto;
@@ -75,7 +86,6 @@ h4 {
     background-color: #fff;
     padding-top: 75px;
     padding-bottom: 75px;
-}
 }
 
 .phoneBg {
@@ -1024,7 +1034,7 @@ td{
 .btn-37 rect {
   fill: none;
   stroke: #222;
-  stroke-width: 0;
+  stroke-width: 1;
   stroke-dasharray: 422, 0;
 }
 .btn-37:hover rect {
